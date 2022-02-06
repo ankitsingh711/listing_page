@@ -84,6 +84,10 @@ margin-left: 30px;
     margin-top: 20px;
 }
 
+.items:hover{
+    transform: scale(1.07);
+}
+
 .items>span{
     margin-left: 20px;
     font-family: Georgia, 'Times New Roman', Times, serif;
