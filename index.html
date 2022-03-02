@@ -22,20 +22,12 @@
     />
 
     <script src="https://kit.fontawesome.com/e76072a7dc.js" crossorigin="anonymous"></script>
-    
-  <style>
-      body{
-        overflow-x: hidden;
-      }
-
-      #cards:hover{
-        transform: scale(1.07);
-      }
-  </style>
+    <link rel="stylesheet" href="home.css">
+    <script src="home.js"></script>
     
   </head>
   <body>
-    <!-- carosels starts  -->
+  <!-- carosels starts  -->
 
     <div class="container-fluid">
         
@@ -75,10 +67,9 @@
               alt="zomato"
               height="450px"
             />  
-
             <div class="carousel-caption d-none d-md-block">
              <div class="container-sm" style="margin-bottom: 100px;margin-left: 400px;">
-              <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal_0"> <h6 style="display: inline;color: white;">Add restaurant</h6> </button>
+              <a href="listing.html"><button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal_0"> <h6 style="display: inline;color: white;">Listing Page</h6> </button></a>
                 <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal_1"><h6 style="display: inline;margin-left: 20px;color: white;">Log In</h6> </button>
                   <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal_2"><h6 style="display: inline;margin-left: 20px;color: white;">Sign Up</h6> </button>
             </div>
@@ -110,7 +101,7 @@
             />
             <div class="carousel-caption d-none d-md-block">
               <div class="container-sm" style="margin-bottom: 100px;margin-left: 400px;">
-                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal_0"> <h6 style="display: inline;color: white;">Add restaurant</h6> </button>
+                <a href="listing.html"><button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal_0"> <h6 style="display: inline;color: white;">Listing Page</h6> </button></a>
                 <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal_1"><h6 style="display: inline;margin-left: 20px;color: white;">Log In</h6> </button>
                   <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal_2"><h6 style="display: inline;margin-left: 20px;color: white;">Sign Up</h6> </button>
             </div>
@@ -140,7 +131,7 @@
             height="450px">
             <div class="carousel-caption d-none d-md-block">
               <div class="container-sm" style="margin-bottom: 100px;margin-left: 400px;">
-                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal_0"> <h6 style="display: inline;color: white;">Add restaurant</h6> </button>
+                <a href="listing.html"><button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal_0"> <h6 style="display: inline;color: white;">Listing Page</h6> </button></a>
                 <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal_1"><h6 style="display: inline;margin-left: 20px;color: white;">Log In</h6> </button>
                   <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal_2"><h6 style="display: inline;margin-left: 20px;color: white;">Sign Up</h6> </button>
             </div>
@@ -182,8 +173,14 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
+       <!-- offer coupon starts  -->
+
+    <div id="coupon">
+      <button id="closebutton" onclick="closecoupon()">&times;</button>
+      <img src="https://cdn.grabon.in/gograbon/images/merchant/1611817594553.jpg" alt="coupon" width="400px">
     </div>
 
+    </div>
     <!-- cards starts  -->
 
     <div class="container-fluid my-4 mx-5">
@@ -377,4 +374,7 @@
       <!-- Copyright -->
     </footer>
   </body>
+  <script>
+    window.onload=loadcoupon()
+  </script>
 </html>

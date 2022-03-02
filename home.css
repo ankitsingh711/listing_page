@@ -1,6 +1,7 @@
 body{
     margin: 0%;
     padding: 0%;
+    overflow-x: hidden;
 }
 
 #header{
@@ -57,6 +58,10 @@ body{
     font-size: 17px;
     margin-left:15px;
 }
+
+#cards:hover{
+    transform: scale(1.07);
+  }
 
 #searchbar{
     width: 54%;
@@ -183,9 +188,7 @@ margin-top: 20px;
 #footer{
     width: 100%;
     height: 430px;
-    position: absolute;
-    margin-top: 1280px;
-    background-color: whitesmoke;
+    background-co;
 }
 
 #myname{
@@ -225,10 +228,26 @@ color: black;
 font-size: 23px;
 margin-left: 50px;
 font-family:Georgia, 'Times New Roman', Times, serif;
-display: inline-block;
 }
 
 .footerdivs>p{
 margin-left: 70px;
 font-size: 15px;
+}
+
+#coupon{
+    width: 400px;
+    height: 200px;
+    background-color: #ca172c;
+    margin-left: 500px;
+    z-index: 100;
+}
+
+#closebutton{
+    background-color: #ca172c;
+    border: none;
+    color: white;
+    font-size: 30px;
+    margin-right: 400px;
+    margin-bottom: 50px;
 }
