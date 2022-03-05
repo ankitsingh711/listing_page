@@ -242,12 +242,13 @@ font-size: 15px;
 }
 
 #coupon{
-    width: 400px;
-    height: 200px;
+    width: 500px;
+    height: 320px;
     background-color: #ca172c;
-    margin-left: 500px;
-    z-index: 100;
-}
+    margin-left: 450px;
+    position: absolute;
+    z-index: 180;
+    margin-top: 75px;
 
 #closebutton{
     background-color: #ca172c;
