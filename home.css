@@ -249,13 +249,12 @@ font-size: 15px;
     position: absolute;
     z-index: 180;
     margin-top: 75px;
+}
 
 #closebutton{
     background-color: #ca172c;
     border: none;
     color: white;
-    font-size: 30px;
-    margin-right: 400px;
-    margin-bottom: 50px;
+    font-size: 23px;
 }
 
