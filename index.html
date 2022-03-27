@@ -81,18 +81,11 @@
 
               <h1 style="font-family: Georgia, 'Times New Roman', Times, serif;font-size: 60px;font-weight: bold;">Zomato</h1>
               <h2>Discover the best food & drinks in India</h2>
-              <select class="form-select float-start" aria-label="Default select example" style="width: 15rem;margin-bottom: 100px;">
-                <option selected>Select Your City</option>
-                <option value="1">Mumbai</option>
-                <option value="2">Chennai</option>
-                <option value="3">Kolkata</option>
-                <option value="4">Pune</option>
-                <option value="5">Bengaluru</option>
-                <option value="6">Lucknow</option>
-                <option value="7">Hydrebad</option>
+              <select id="city" onchange="getCity()" class="form-select float-start" aria-label="Default select example" style="width: 15rem;margin-bottom: 100px;">
+                <option>Select Your City</option>
               </select>
               <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Search for restaurant,cuisine or dish" aria-label="Search for restaurant,cuisine or dish">
+                <input id="myInput" onkeyup="myFunction()" class="form-control me-2" type="search" placeholder="Search for restaurant,cuisine or dish" aria-label="Search for restaurant,cuisine or dish">
                 <button class="btn btn-outline-light" type="submit">Search</button>
               </form>
             </div>
@@ -115,18 +108,11 @@
             </div>
               <h1 style="font-family: Georgia, 'Times New Roman', Times, serif;font-size: 60px;font-weight: bold;">Zomato</h1>
               <h2>Discover the best food & drinks in India</h2>
-              <select class="form-select float-start" aria-label="Default select example" style="width: 15rem;margin-bottom: 100px;">
-                <option selected>Select Your City</option>
-                <option value="1">Mumbai</option>
-                <option value="2">Chennai</option>
-                <option value="3">Kolkata</option>
-                <option value="4">Pune</option>
-                <option value="5">Bengaluru</option>
-                <option value="6">Lucknow</option>
-                <option value="7">Hydrebad</option>
+              <select id="city" onchange="getCity()" class="form-select float-start" aria-label="Default select example" style="width: 15rem;margin-bottom: 100px;">
+                <option>Select Your City</option>
               </select>
               <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Search for restaurant,cuisine or dish" aria-label="Search">
+                <input id="restaurant" onchange="getRest()" class="form-control me-2" type="search" placeholder="Search for restaurant,cuisine or dish" aria-label="Search">
                 <button class="btn btn-outline-light" type="submit">Search</button>
               </form>
             </div>
@@ -156,18 +142,11 @@
             </div>
               <h1 style="font-family: Georgia, 'Times New Roman', Times, serif;font-size: 60px;font-weight: bold;">Zomato</h1>
               <h2>Discover the best food & drinks in India</h2>
-              <select class="form-select float-start" aria-label="Default select example" style="width: 15rem;margin-bottom: 100px;">
-                <option selected>Select Your City</option>
-                <option value="1">Mumbai</option>
-                <option value="2">Chennai</option>
-                <option value="3">Kolkata</option>
-                <option value="4">Pune</option>
-                <option value="5">Bengaluru</option>
-                <option value="6">Lucknow</option>
-                <option value="7">Hydrebad</option>
+              <select id="city" onchange="getCity()" class="form-select float-start" aria-label="Default select example" style="width: 15rem;margin-bottom: 100px;">
+                <option>Select Your City</option>
               </select>
               <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Search for restaurant,cuisine or dish" aria-label="Search">
+                <input id="restaurant" onchange="getRest()" class="form-control me-2" type="search" placeholder="Search for restaurant,cuisine or dish" aria-label="Search">
                 <button class="btn btn-outline-light" type="submit">Search</button>
               </form>
             </div>
@@ -389,6 +368,6 @@
     </footer>
   </body>
   <script>
-    window.onload=loadcoupon()
+    window.onload=loadcoupon();getCity()
   </script>
 </html>
