@@ -4,7 +4,8 @@
   "description": "This is my one of the project which i am working right now.",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node location.json",
+    "dev": "nodemon location.json"
   },
   "keywords": [
     "node",
